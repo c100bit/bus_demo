@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DEMO</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/li-scroller.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/jquery.li-scroller.1.0.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=5fbb1105-82f7-463e-a55a-4c4863879981&lang=ru_RU"
+        type="text/javascript">
+    </script>
+</head>
+
+<body>
+    <div class="border" style="
+        height: 1490px;">
+        <div id="monitor-title">
+            <div class="title-text">
+                <span>транспорт</span><span>нао</span>
+            </div>
+        </div>
+        <div class="monitor-logo"><img src="assets/images/nao_logo.png"></div>
+    </div>
+    <div id="monitor">
+        <div id="content">
+            <div id="bus_info">
+                <div class='station'>
+                    <span class="station-name">Остановка "Площадь Ленина"</span>
+                    <span class="time">7 июня, 14:45</span>
+                </div>
+                <ul id="ticker"></ul>
+                <div class="buses">
+
+                    <ul>
+                        <li>
+                            <div class="bus-block">
+                                <span class="bus-number">411</span>
+                                <div class='bus-route'><span>Морской порт - Посёлок Искателей</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bus-block">
+                                <span class="bus-number">413</span>
+                                <div class='bus-route'><span>Улица Ленина - Посёлок Искателей</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bus-block">
+                                <span class="bus-number">4A</span>
+                                <div class='bus-route'><span>Улица Ленина - Аэропорт</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bus-block">
+                                <span class="bus-number">2</span>
+                                <div class='bus-route'><span>Улица Ленина - Морской порт</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bus-block">
+                                <span class="bus-number">6</span>
+                                <div class='bus-route'><span>Улица Ленина - Российская улица</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bus-block">
+                                <span class="bus-number">8</span>
+                                <div class='bus-route'><span>Морской порт - Улица Мира</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bus-block">
+                                <span class="bus-number">4</span>
+                                <div class='bus-route'><span>Морской порт - Аэропорт</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bus-block">
+                                <span class="bus-number">7</span>
+                                <div class='bus-route'><span>Морской порт - Озеро Безымянное</span></div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <div id='news'>
+
+                    <ul class="scrollbar x white">
+                        <li>
+                            <div class='news-block'>
+                                <div class='news-image'><img src="assets/images/news1.jpg" /></div>
+                                <div class="news-text"><span class='news-date'>7 июня 2019</span><span
+                                        class="max-lines-4">​Ненецкий АО и ФГУП «Почта России» заключили соглашение о
+                                        сотрудничестве</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class='news-block'>
+                                <div class='news-image'><img src="assets/images/news2.jpg" /></div>
+                                <div class="news-text"><span class='news-date'>7 июня 2019</span><span
+                                        class="max-lines-4">Александр Цыбульский и Андрей Воробьев подписали соглашение
+                                        о сотрудничестве</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class='news-block'>
+                                <div class='news-image'><img src="assets/images/news6.jpg" /></div>
+                                <div class="news-text"><span class='news-date'>7 июня 2019</span><span
+                                        class="max-lines-4">В НАО продолжается приём заявок на присвоение ряда почётных
+                                        званий</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class='news-block'>
+                                <div class='news-image'><img src="assets/images/news3.jpg" /></div>
+                                <div class="news-text"><span class='news-date'>7 июня 2019</span><span
+                                        class="max-lines-4">Жители НАО могут пожаловаться на некачественные товары,
+                                        работы и услуги через офисы «Мои Документы»</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class='news-block'>
+                                <div class='news-image'><img src="assets/images/news4.jpg" /></div>
+                                <div class="news-text"><span class='news-date'>7 июня 2019</span><span
+                                        class="max-lines-4">Прохождение паводка в НАО может стать более безопасным для
+                                        жителей Красного</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class='news-block'>
+                                <div class='news-image'><img src="assets/images/news5.jpg" /></div>
+                                <div class="news-text"><span class='news-date'>7 июня 2019</span><span
+                                        class="max-lines-4">Более 1,4 тонн гуманитарной помощи отправлено жителям сёл
+                                        НАО</span></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div id="map-content">
+                <div id="map"></div>
+                <div id="menu">
+                    <ul>
+                        <li class="bus"><i class="material-icons">
+                                directions_bus
+                            </i><span>Автобусы</span></li>
+                        <li class="affiche"><i class="material-icons">
+                                event
+                            </i><span>Афиша</span></li>
+                        <li class="news"><i class="material-icons">
+                                speaker_notes
+                            </i><span>Новости</span></li>
+                        <li class="attractions"><i class="material-icons">
+                                account_balance
+                            </i><span>Город</span></li>
+                        <li class="sos"><i class="material-icons">
+                                warning
+                            </i><span>SOS</span></li>
+                    </ul>
+                </div>
+                <div class="stops-list scrollbar y white right-box">
+                    <div class='back-button'><i class="material-icons">
+                            arrow_forward
+                        </i></div>
+                    <div class="stops-title"><span class="number">411</span><span>Морской порт - Посёлок
+                            Искателей</span></div>
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="bus-list scrollbar y white right-box">
+                    <div class='back-button'><i class="material-icons">arrow_forward</i></div>
+                    <ul>
+                        <li>
+                            <div class="bus-block">
+                                <span class="bus-number">411</span>
+                                <div class="bus-route"><span>Морской порт - Посёлок Искателей</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bus-block">
+                                <span class="bus-number">413</span>
+                                <div class="bus-route"><span>Улица Ленина - Посёлок Искателей</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bus-block">
+                                <span class="bus-number">415</span>
+                                <div class="bus-route"><span>Посёлок Искателей - Аэропорт</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bus-block">
+                                <span class="bus-number">2</span>
+                                <div class="bus-route"><span>Улица Ленина - Морской порт</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bus-block">
+                                <span class="bus-number">4</span>
+                                <div class="bus-route"><span>Морской порт - Аэропорт</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bus-block">
+                                <span class="bus-number">4A</span>
+                                <div class="bus-route"><span>Улица Ленина - Аэропорт</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bus-block">
+                                <span class="bus-number">6</span>
+                                <div class="bus-route"><span>Улица Ленина - Российская улица</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bus-block">
+                                <span class="bus-number">8</span>
+                                <div class="bus-route"><span>Морской порт - Улица Мира</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bus-block">
+                                <span class="bus-number">7</span>
+                                <div class="bus-route"><span>Морской порт - Озеро Безымянное</span></div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="affiche-list scrollbar y white right-box">
+                    <div class='back-button'><i class="material-icons">arrow_forward</i></div>
+                    <ul>
+                    </ul>
+
+                </div>
+                <div class="news-list scrollbar y white right-box">
+                    <div class='back-button'><i class="material-icons">arrow_forward</i></div>
+                    <ul>
+                    </ul>
+                </div>
+                <div class="news-item scrollbar y white right-box">
+                    <div class='back-button'><i class="material-icons">arrow_forward</i></div>
+                    <div class="news-item-title">Ненецкий АО и ФГУП «Почта России» заключили соглашение о сотрудничестве
+                    </div>
+                    <div class="news-item-date">7 июня 2019, 15:03</div>
+                    <div class="news-item-short">Подписи под документом поставили губернатор Ненецкого автономного
+                        округа Александр Цыбульский и генеральный директор федерального государственного унитарного
+                        предприятия «Почта России» Николай Подгузов.</div>
+                    <div class="news-item-image"><img src="assets/images/news1big.jpg" /></div>
+                    <div class="news-item-text">
+                        <p>Соглашение
+                            определяет взаимодействие сторон в сфере совершенствования и развития
+                            федеральной почтовой связи на территории Ненецкого автономного округа. Документ
+                            подписан в пятницу, 7 июня, в рамках Петербургского экономического форума (ПМФ).</p>
+                        <p>Предметом
+                            соглашения является координация сторон в области развития почтовой сети на
+                            территории ненецкого Заполярья посредством современных информационных и
+                            телекоммуникационных технологий, а также создание эффективной системы
+                            взаимодействия сторон для совершенствования почтового обслуживания населения, в
+                            первую очередь на селе.</p>
+                        <p><em>— Для нас «Почта России» это не просто организация, которая
+                                доставляет грузы и почтовые отправления, эта организация является своего рода
+                                связующей артерией для сельских населенных пунктов. В рамках соглашения мы
+                                ведём речь о совместной работе по обновлению инфраструктуры почтовых отделений,
+                                что очень важно, </em>— сказал после подписания соглашения губернатор НАО
+                            <strong>Александр
+                                Цыбульский.</strong></p>
+                        <p>Генеральный директор федерального предприятия Николай Подгузов отметил, что подписанное
+                            соглашение является результатом совместной работы по плану развития почтовой
+                            связи в Ненецком автономном округе. </p>
+                        <p><em>- Сегодня правильно в
+                                координации с регионами насыщать почтовые отделения услугами и делать их
+                                удобными и доступными для жителей Севера</em>, — сказал <strong>он.</strong></p>
+                        <p>Так,
+                            соглашение предусматривает взаимодействие сторон для решения проблем
+                            обеспечения функционирования убыточных, но социально-значимых отделений
+                            почтовой связи, расположенных в труднодоступных и отдаленных поселениях округа.
+                            Кроме того, стороны намерены совместно работать по вопросам повышения
+                            доступности почтовых услуг, комплектования филиала «Почты России» в НАО
+                            квалифицированными кадрами, защиты потребительского рынка от нелицензионных
+                            услуг связи, внедрения высокотехнологичных услуг по доставке пенсий, пособий и
+                            других выплат целевого назначения, приема коммунальных платежей.</p>
+                        <p>Для
+                            реализации соглашения будут созданы специальные рабочие группы, которые
+                            проработают конкретные планы взаимодействия сторон в рамках соглашения.</p>
+                        <p>Документ
+                            заключен на четыре года, может быть пролонгирован, и вступит в силу с момента
+                            его подписания.</p>
+                    </div>
+                </div>
+                <div class="attraction-list scrollbar y white right-box">
+                    <div class='back-button'><i class="material-icons">arrow_forward</i></div>
+                    <ul>
+                    </ul>
+
+                </div>
+                <div class="line-news-item scrollbar y white right-box">
+                    <div class='back-button'><i class="material-icons">arrow_forward</i></div>
+                    <div class="news-item-title">Штормовое предупреждение на территории Ненецкого автономного округа на
+                        11.01.2019</div>
+                    <div class="news-item-date">10 января 2019, 13:00</div>
+                    <div class="news-item-image"><img src="assets/images/shtorm.jpg" /></div>
+                    <div class="news-item-text">
+                        <p>ШТОРМОВОЕ ПРЕДУПРЕЖДЕНИЕ</p>
+                        <p>Ночью и днем 11.01.2019 на западном побережье полуострова Канин ожидается усиление ветра
+                            17-22 м/с, с порывами 27-32 м/с, местами сильная метель, видимость менее 500 метров</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
